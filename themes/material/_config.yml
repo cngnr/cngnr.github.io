@@ -33,7 +33,7 @@ scheme: Paradox
 
 # UI & UX: slogan, color, effect
 uiux:
-    slogan: "Hi, nice to meet you"
+    slogan: "We got fun and games."
     theme_color: "#0097A7"
     theme_sub_color: "#00838F"
     hyperlink_color: "#00838F"
@@ -175,7 +175,7 @@ sns:
 sns_share:
     twitter: true
     facebook: true
-    googleplus: true
+    googleplus: false
     weibo: true
     linkedin: false
     qq: false
@@ -225,16 +225,16 @@ sidebar:
 # If you want to use gitment,you should get the client_id and client_secret form https://github.com/settings/applications/new
 # If you want to use valine,you should get the app_id and app_key form https://leancloud.cn ,more setting please see https://github.com/xCss/Valine
 comment:
-    use:
+    use: gitment
     shortname: # duoshuo or disqus shortname
     changyan_appid:
     changyan_conf:
     changyan_thread_key_type: path
     livere_data_uid:
-    gitment_repo:   # git repo of the hexo
-    gitment_owner:  # git repo's owner
-    gitment_client_id:  # github app client id 
-    gitment_client_secret :  # github app client secret 
+    gitment_repo: comment
+    gitment_owner: cngnr
+    gitment_client_id: bceb3eaa63b01652da3d 
+    gitment_client_secret : 81022a8c46f453e681301cc5c40e93c0f0755d88 
     valine_leancloud_appId: # leancloud application app id
     valine_leancloud_appKey: # leancloud application app key
 
