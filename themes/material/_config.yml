@@ -4,9 +4,9 @@
 
 # Head info
 head:
-    favicon: "/img/favicon.png"
-    high_res_favicon: "/img/favicon.png"
-    apple_touch_icon: "/img/favicon.png"
+    favicon: "/img/favicon.ico"
+    high_res_favicon: "/img/favicon.ico"
+    apple_touch_icon: "/img/favicon.ico"
     keywords:
     site_verification:
         google:
@@ -33,7 +33,7 @@ scheme: Paradox
 
 # UI & UX: slogan, color, effect
 uiux:
-    slogan: "We got fun and games."
+    slogan:
     theme_color: "#0097A7"
     theme_sub_color: "#00838F"
     hyperlink_color: "#00838F"
@@ -158,19 +158,18 @@ toc:
 # SNS Menu
 sns:
     email: admin@cngnr.com
-    facebook: "https://www.facebook.com/cngnr"
-    twitter: "https://twitter.com/cngnr"
-    googleplus: "https://www.google.com/"
-    weibo:
+    facebook:
+    twitter: "https://twitter.com/nicreve"
+    weibo: "https://weibo.com/nicreve"
+    wechat:
     instagram:
     tumblr:
     github:
     linkedin:
     zhihu:
-    bilibili:
+    bilibili: "https://space.bilibili.com/522917656"
     telegram:
     v2ex:
-
 # SNS Share Switch
 sns_share:
     twitter: true
@@ -208,8 +207,8 @@ sidebar:
         use: false
         divider: false
     footer:
-        divider: true
-        theme: true
+        divider: false
+        theme: false
         support: false
         feedback: false
         material: false
@@ -294,3 +293,4 @@ vendors:
     prettify:
     # Material Icons 3.0.1
     material_icons:
+    icon_font: //at.alicdn.com/t/font_1757198_ycj2o9djatf.css

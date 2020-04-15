@@ -1,109 +1,114 @@
 <div class="mdl-mini-footer--left-section sns-list">
-    <!-- Twitter -->
-    <% if(theme.sns.twitter) { %>
-        <a href="<%= theme.sns.twitter %>" target="_blank">
-            <button class="mdl-mini-footer--social-btn social-btn footer-sns-twitter">
-                <span class="visuallyhidden">Twitter</span>
-            </button><!--
-     --></a>
-    <% } %>
-
-    <!-- Facebook -->
-    <% if(theme.sns.facebook) { %>
-        <a href="<%= theme.sns.facebook %>" target="_blank">
-            <button class="mdl-mini-footer--social-btn social-btn footer-sns-facebook">
-                <span class="visuallyhidden">Facebook</span>
-            </button><!--
-     --></a>
-    <% } %>
-
-    <!-- Google + -->
-    <% if(theme.sns.googleplus) { %>
-        <a href="<%= theme.sns.googleplus %>" target="_blank">
-            <button class="mdl-mini-footer--social-btn social-btn footer-sns-gplus">
-                <span class="visuallyhidden">Google Plus</span>
-            </button><!--
-     --></a>
-    <% } %>
-
-    <!-- Weibo -->
-    <% if(theme.sns.weibo) { %>
-        <a href="<%= theme.sns.weibo %>" target="_blank">
-            <button class="mdl-mini-footer--social-btn social-btn footer-sns-weibo">
-                <span class="visuallyhidden">Weibo</span>
-            </button><!--
-     --></a>
-    <% } %>
-
-    <!-- Instagram -->
-    <% if(theme.sns.instagram) { %>
-        <a href="<%= theme.sns.instagram %>" target="_blank">
-            <button class="mdl-mini-footer--social-btn social-btn footer-sns-instagram">
-                <span class="visuallyhidden">Instagram</span>
-            </button><!--
-     --></a>
-    <% } %>
-
-    <!-- Tumblr -->
-    <% if(theme.sns.tumblr) { %>
-        <a href="<%= theme.sns.tumblr %>" target="_blank">
-            <button class="mdl-mini-footer--social-btn social-btn footer-sns-tumblr">
-                <span class="visuallyhidden">Tumblr</span>
-            </button><!--
-     --></a>
-    <% } %>
-
-    <!-- Github -->
-    <% if(theme.sns.github) { %>
-        <a href="<%= theme.sns.github %>" target="_blank">
-            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
-                <span class="visuallyhidden">Github</span>
-            </button><!--
-     --></a>
-    <% } %>
-
-    <!-- LinkedIn -->
-    <% if(theme.sns.linkedin) { %>
-        <a href="<%= theme.sns.linkedin %>" target="_blank">
-            <button class="mdl-mini-footer--social-btn social-btn footer-sns-linkedin">
-                <span class="visuallyhidden">LinkedIn</span>
-            </button><!--
-     --></a>
-    <% } %>
-
-    <!-- Zhihu -->
-    <% if(theme.sns.zhihu) { %>
-        <a href="<%= theme.sns.zhihu %>" target="_blank">
-            <button class="mdl-mini-footer--social-btn social-btn footer-sns-zhihu">
-                <span class="visuallyhidden">Zhihu</span>
-            </button><!--
-     --></a>
-    <% } %>
-
-    <!-- Bilibili -->
-    <% if(theme.sns.bilibili) { %>
-        <a href="<%= theme.sns.bilibili %>" target="_blank">
-            <button class="mdl-mini-footer--social-btn social-btn footer-sns-bilibili">
-                <span class="visuallyhidden">Bilibili</span>
-            </button><!--
-     --></a>
-    <% } %>
-
-    <!-- Telegram -->
-    <% if(theme.sns.telegram) { %>
-        <a href="<%= theme.sns.telegram %>" target="_blank">
-            <button class="mdl-mini-footer--social-btn social-btn footer-sns-telegram">
-                <span class="visuallyhidden">Telegram</span>
-            </button><!--
-     --></a>
-    <% } %>
-    
-    <!-- V2EX -->
-    <% if(theme.sns.v2ex) { %>
-        <a href="<%= theme.sns.v2ex %>" target="_blank">
-            <button class="mdl-mini-footer--social-btn social-btn footer-sns-v2ex">
-                <span class="visuallyhidden">V2EX</span>
-            </button><!--
-     --></a>
-    <% } %>
+    <ul class="list-inline text-center">
+      <!-- Mail -->
+        <% if(theme.sns.email) { %>
+            <li>
+                <a target="_blank" href="mailto:<%= theme.sns.email %>">
+                    <span class="fa-stack fa-lg">
+                        <i class="iconfont icon-mail-fill"></i>
+                    </span>
+                </a>
+            </li>
+        <% } %>
+        <!-- Twitter -->
+        <% if(theme.sns.twitter) { %>
+            <li>
+                <a target="_blank" href="<%= theme.sns.twitter %>">
+                    <span class="fa-stack fa-lg">
+                        <i class="iconfont icon-twitter-fill"></i>
+                    </span>
+                </a>
+            </li>
+        <% } %>
+        <!-- Facebook -->
+        <% if(theme.sns.facebook) { %>
+            <li>
+                <a target="_blank" href="<%= theme.sns.facebook %>">
+                    <span class="fa-stack fa-lg">
+                        <i class="iconfont icon-facebook-fill"></i>
+                    </span>
+                </a>
+            </li>
+        <% } %>
+       <!-- Weibo -->
+        <% if(theme.sns.weibo) { %>
+            <li>
+                <a target="_blank" href="<%= theme.sns.weibo %>">
+                    <span class="fa-stack fa-lg">
+                        <i class="iconfont icon-weibo-fill"></i>
+                    </span>
+                </a>
+            </li>
+        <% } %>
+        <!-- Wechat -->
+        <% if(theme.sns.wechat) { %>
+            <li>
+                <a target="_blank" href="<%= theme.sns.wechat %>">
+                    <span class="fa-stack fa-lg">
+                        <i class="iconfont icon-wechat-fill"></i>
+                    </span>
+                </a>
+            </li>
+        <% } %>
+        <!-- Instagram -->
+        <% if(theme.sns.instagram) { %>
+            <li>
+                <a target="_blank" href="<%= theme.sns.instagram %>">
+                    <span class="fa-stack fa-lg">
+                        <i class="iconfont icon-instagram-fill"></i>
+                    </span>
+                </a>
+            </li>
+        <% } %>
+        <!-- Tumblr -->
+        <% if(theme.sns.tumblr) { %>
+            <li>
+                <a target="_blank" href="<%= theme.sns.tumblr %>">
+                    <span class="fa-stack fa-lg">
+                        <i class="iconfont icon-tumblr-fill"></i>
+                    </span>
+                </a>
+            </li>
+        <% } %>
+        <!-- Github -->
+        <% if(theme.sns.github) { %>
+            <li>
+                <a target="_blank" href="<%= theme.sns.github %>">
+                    <span class="fa-stack fa-lg">
+                        <i class="iconfont icon-github-fill"></i>
+                    </span>
+                </a>
+            </li>
+        <% } %>
+        <!-- Zhihu -->
+        <% if(theme.sns.zhihu) { %>
+            <li>
+                <a target="_blank" href="<%= theme.sns.zhihu %>">
+                    <span class="fa-stack fa-lg">
+                        <i class="iconfont icon-zhihu-fill"></i>
+                    </span>
+                </a>
+            </li>
+        <% } %>
+        <!-- BiliBili -->
+        <% if(theme.sns.bilibili) { %>
+            <li>
+                <a target="_blank" href="<%= theme.sns.bilibili %>">
+                    <span class="fa-stack fa-lg">
+                        <i class="iconfont icon-bilibili-fill"></i>
+                    </span>
+                </a>
+            </li>
+        <% } %>
+        <!-- Telegram -->
+        <% if(theme.sns.telegram) { %>
+            <li>
+                <a target="_blank" href="<%= theme.sns.telegram %>">
+                    <span class="fa-stack fa-lg">
+                        <i class="iconfont icon-telegram-fill"></i>
+                    </span>
+                </a>
+            </li>
+        <% } %>
+    </ul>
 </div>

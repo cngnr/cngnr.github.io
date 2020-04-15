@@ -1,0 +1,16 @@
+<!-- Daily pic -->
+<div class="mdl-card <% if(theme.card_elevation) { %><%= 'mdl-shadow--' + theme.card_elevation + 'dp' %><% } %> daily-pic mdl-cell mdl-cell--12-col index-top-block">
+
+    <!-- Pic & Slogan -->
+    <div class="mdl-card__media mdl-color-text--grey-50" style="background-image:url(<%= url_for(theme.img.daily_pic) %>)">
+        <p class="index-top-block-slogan">
+        <% if(theme.uiux.slogan) { %>
+            <% if(Array.isArray(theme.uiux.slogan)) { %>
+                <%- theme.uiux.slogan.join('<br>') %>
+            <% } else { %>
+                <%- theme.uiux.slogan %>
+            <% } %>
+        <% } %>
+        </p>
+    </div>
+</div>
