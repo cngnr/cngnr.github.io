@@ -2287,7 +2287,7 @@ $(document).ready(function() {
                     child.remove('MD-burger-line');
                     child.add('MD-burger-arrow');
                 }
-            }}
+            }
         });
 
 })();
